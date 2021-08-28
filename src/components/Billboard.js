@@ -5,13 +5,11 @@ const Billboard = (props) => {
   return (
     <div>
       <Jumbotron className='py-5'>
-        <h1 className='display-5'>I am currently looking for work!</h1>
-        <p className='lead'>Are you looking for a full-stack developer?</p>
+        <h1 className='display-5'>I am currently employed</h1>
+        <p className='lead'>Front-end Developer at Elevux</p>
         <hr className='my-2' />
         <p>
-          I am seeking out a new oppurtunity to utilize my skills as a web
-          developer in order to build out projects with clean, maintainable
-          code. Please do not hesitate to contact me with your next project!
+          Creating elevated front-end 3D, web based experiences.
         </p>
         <p className='mt-4'>
           <Button
