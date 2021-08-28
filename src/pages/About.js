@@ -23,27 +23,22 @@ const AboutPage = () => {
                   Developer for more than two years now. I enjoy creating user
                   interfaces in React, developing APIs in Node and Express, and
                   utilizing MongoDB, GraphQL, and MySQL databases. I have a
-                  large amount of experience turning design docs into functional
+                  large amount of experience turning design prototypes into functional
                   apps.
                   <br />
                   <br />I have worked mainly for startups and am very
                   comfortable in that fast-paced environment. Tools I have used
                   include Github, Bitbucket, Jira, Trello, and I am comfortable
-                  in both Windows and macOS environments. I am comfortable in
+                  in both Windows and macOS environments. I am very experienced in
                   React and Javascript but can pick up new frameworks and
                   languages quickly.
                   <br />
                   <br />
+                  I love to experiment with creating 3D experiences in React and BabylonJS.
                   In my spare time, I enjoy playing games online with friends,
                   streaming on Twitch occasionally. I also enjoy watching anime
                   and tv shows. I try to stay active by working out in my garage
-                  gym, lifting weights. When I have time, I like to fiddle with
-                  Unity and aspire to create my own game one day.
-                  <br />
-                  <br />
-                  I also play trumpet in a community orchestra and jazz band
-                  every Sunday evening. I love playing music and make time to
-                  practice outside of rehearsal as often as I can.
+                  gym, lifting weights.
                   <br />
                   <br />
                   Thank you for taking the time to read about me!
