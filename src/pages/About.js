@@ -1,22 +1,14 @@
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  Media,
-  CardTitle,
-  CardText,
-} from 'reactstrap';
+
 import ProfileImg1 from '../assets/profile1.jpg';
 import ProfileImg2 from '../assets/profile2.jpg';
 
 const AboutPage = () => {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <Card className='p-3 my-5'>
-            <CardText tag='h4' className='ml-2 mb-3'>About Me</CardText>
+    <div>
+      <div>
+        <div>
+          <div className='p-3 my-5'>
+            <div tag='h4' className='ml-2 mb-3'>About Me</div>
             <div>
               <div className='w-50' style={{maxWidth: '350px'}}>
                 <img
@@ -58,10 +50,10 @@ const AboutPage = () => {
                 <p>Thank you for taking the time to read about me!</p>
               </div>
             </div>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

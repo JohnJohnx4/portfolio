@@ -1,10 +1,10 @@
 import React from 'react';
-import { Jumbotron, Button } from 'reactstrap';
+// import { Jumbotron, Button } from 'reactstrap';
 
 const Billboard = (props) => {
   return (
     <div>
-      <Jumbotron className='py-5'>
+      <div className='py-5'>
         <h1 className='display-5'>I am currently looking for work!</h1>
         <p className='lead'>Are you looking for a full-stack developer?</p>
         <hr className='my-2' />
@@ -14,7 +14,7 @@ const Billboard = (props) => {
           code. Please do not hesitate to contact me with your next project!
         </p>
         <p className='mt-4'>
-          <Button
+          <div
             className='mr-2 mt-1'
             outline 
             variant='link'
@@ -24,8 +24,8 @@ const Billboard = (props) => {
             target='_blank'
           >
             Resume
-          </Button>
-          <Button
+          </div>
+          <div
             className='mr-2 mt-1'
             outline 
             variant='link'
@@ -34,8 +34,8 @@ const Billboard = (props) => {
             href='mailto:johnpaulcorreia@gmail.com'
           >
             Email
-          </Button>
-          <Button
+          </div>
+          <div
             className='mr-2 mt-1'
             outline 
             variant='link'
@@ -45,8 +45,8 @@ const Billboard = (props) => {
             href='https://github.com/JohnJohnx4'
           >
             Github
-          </Button>
-          <Button
+          </div>
+          <div
             className='mr-2 mt-1'
             outline 
             variant='link'
@@ -56,9 +56,9 @@ const Billboard = (props) => {
             href='https://www.linkedin.com/in/john-correia/'
           >
             LinkedIn
-          </Button>
+          </div>
         </p>
-      </Jumbotron>
+      </div>
     </div>
   );
 };

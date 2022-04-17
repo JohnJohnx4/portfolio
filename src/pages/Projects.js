@@ -1,4 +1,3 @@
-import { Container, Row, Col, CardDeck } from 'reactstrap';
 import ProjectCard from '../components/ProjectCard';
 import DashboardImg from '../assets/dashboard.png';
 import MenuImg from '../assets/menu.png';
@@ -59,20 +58,20 @@ const ProjectsPage = () => {
   ];
 
   return (
-    <Container className='mt-5'>
-      <Row>
-        <Col>
+    <div className='mt-5'>
+      <div>
+        <div>
           <div className='mb-5 h3 text-muted text-center'> My Projects</div>
-        </Col>
-      </Row>
-      <Container>
-        <CardDeck className='m-auto'>
+        </div>
+      </div>
+      <div>
+        <div className='m-auto'>
           {projectsData.map((project, i) => (
               <ProjectCard project={project} />
           ))}
-        </CardDeck>
-      </Container>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 };
 

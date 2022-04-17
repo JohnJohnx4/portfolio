@@ -1,33 +1,31 @@
 import React, { useState } from 'react';
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  CardTitle,
-  CardText,
-  CardBody,
-  CardLink,
-} from 'reactstrap';
+
 import Carousel from '../components/Carousel';
 import DashboardImg from '../assets/dashboard.png';
 import MenuImg from '../assets/menu.png';
 import FundopolisImg from '../assets/fundopolis.png';
 import NoterImg from '../assets/noter.png';
 import HairsprayImg from '../assets/hairspray.png';
-import ShatteredImg from '../assets/shattered.png';
 
 const MainPage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const items = [
     {
+      src: NoterImg,
+      altText: 'Noter App Logo',
+      caption: '',
+      description:
+        'Note taking application built with React. Styled with Material-UI and deployed to Heroku',
+      href: 'https://noter.johnpcorreia.com/',
+    },
+    {
       src: FundopolisImg,
       altText: 'Fundopolis website screepcap',
       caption: '',
       description:
         'About page built with GatsbyJS and Ghost CMS. Deployed with AWS using Lightsail and Amplify',
-      href: 'https://about.fundopolis.com/',
+      href: false,
     },
     {
       src: DashboardImg,
@@ -46,14 +44,6 @@ const MainPage = () => {
       href: false,
     },
     {
-      src: NoterImg,
-      altText: 'Noter App Logo',
-      caption: '',
-      description:
-        'Note taking application built with React. Styled with Material-UI and deployed to Heroku',
-      href: 'https://noter.johnpcorreia.com/',
-    },
-    {
       src: HairsprayImg,
       altText: 'Hairspray App Logo',
       caption: '',
@@ -64,34 +54,34 @@ const MainPage = () => {
   ];
 
   return (
-    <Container>
-      <Row>
-        <Col>
-          <Card className='px-2 mt-5'>
-            <CardBody className='text-center'>
-              <CardTitle tag='h5' className='mb-4'>
+    <div>
+      <div>
+        <div>
+          <div className='px-2 mt-5'>
+            <div className='text-center'>
+              <div tag='h5' className='mb-4'>
                 I'm John, a professional software developer.
                 <div className='d-none d-sm-block'>
                   I specialize in building apps in React, Node, GraphQL, and
                   much more. Please check out my projects!
                 </div>
-              </CardTitle>
+              </div>
               <Carousel items={items} setCurrentSlide={setCurrentSlide} />
-            </CardBody>
-            <CardBody>
-              <CardText>{items[currentSlide].description}</CardText>
+            </div>
+            <div>
+              <div>{items[currentSlide].description}</div>
               {items[currentSlide].href ? (
-                <CardLink href={items[currentSlide].href} target='_blank'>
+                <div href={items[currentSlide].href} target='_blank'>
                   Visit Site &#8811;
-                </CardLink>
+                </div>
               ) : (
-                <CardText> </CardText>
+                <div> </div>
               )}
-            </CardBody>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

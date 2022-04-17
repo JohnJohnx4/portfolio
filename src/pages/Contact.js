@@ -1,22 +1,12 @@
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  CardTitle,
-  CardText,
-  CardBody,
-  CardLink,
-} from 'reactstrap';
 import Billboard from '../components/Billboard';
 
 const ContactPage = () => {
   return (
-    <Container className='px-3'>
-      <Row>
+    <div className='px-3'>
+      <div>
         <Billboard />
-      </Row>
-    </Container>
+      </div>
+    </div>
   );
 };
 
