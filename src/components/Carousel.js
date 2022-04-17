@@ -1,14 +1,4 @@
 import React, { useState } from 'react';
-// import {
-//   Carousel,
-//   CarouselItem,
-//   CarouselControl,
-//   CarouselIndicators,
-//   CarouselCaption
-// } from 'reactstrap';
-
-import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
 
 const CarouselComponent = ({ items, setCurrentSlide }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -37,11 +27,7 @@ const CarouselComponent = ({ items, setCurrentSlide }) => {
   const slides = items.map((item) => {
     return (
       <div>
-        <img
-          src={item.src}
-          alt={item.altText}
-          style={{ width: '100%', height: 'auto' }}
-        />
+        <img src={item.src} alt={item.altText} style={{ width: '100%', height: 'auto' }} />
         <div>{item.caption}</div>
       </div>
     );
