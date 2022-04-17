@@ -1,23 +1,21 @@
-import { Container, Row, Col, Card, Media, CardTitle, CardText } from 'reactstrap';
 import ProfileImg1 from '../assets/profile1.jpg';
 import ProfileImg2 from '../assets/profile2.jpg';
 
 const AboutPage = () => {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <Card className='p-5 my-5'>
-                
-                <CardTitle className='mx-5'>
-                  About Me
-                </CardTitle>
-                <div>
-                
-                <div className='w-25 mr-5'>
-                  <img src={ProfileImg1} className='img-fluid img-thumbnail float-left'/>
-                </div>
-                <div className='ml-5'>
+    <div>
+      <div>
+        <div>
+          <div className='p-3 my-5'>
+            <div tag='h4' className='ml-2 mb-3'>About Me</div>
+            <div>
+              <div className='w-50' style={{maxWidth: '350px'}}>
+                <img
+                  src={ProfileImg1}
+                  className='img-fluid img-thumbnail float-left mr-4 mb-2'
+                />
+              </div>
+              <div>
                 <p>
                   My name is John P. Correia, and I have been a professional Web
                   Developer for more than two years now. I enjoy creating user
@@ -43,12 +41,13 @@ const AboutPage = () => {
                   <br />
                   Thank you for taking the time to read about me!
                 </p>
-                </div>
-                </div>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
+                <p>Thank you for taking the time to read about me!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
